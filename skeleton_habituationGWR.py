@@ -3,7 +3,7 @@
 # of the Aplysia gill withdrawal reflex
 #
 # Modified for BU's RISE Practicum Comp Neuro lab by mbezaire@bu.edu
-#
+
 ###############################
 # import libraries with special
 # functions needed in this script
@@ -40,8 +40,8 @@ y = np.zeros((1,nTs)) # set up (define) a vector for the output time series
 for t in range(0, nTs):
     y[0,t]=v*x[t] 
     
-    if x[t] >0:
-        v = v*0.3
+    if x[t] > 0:
+        v = v*0.7
         
 #     then indent 4 spaces and write the equation that
 #     describes how each input value in the vector x is 
